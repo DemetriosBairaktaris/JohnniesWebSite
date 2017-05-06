@@ -1,0 +1,42 @@
+{
+    "menu":[
+            {"category": "Salads and Light Plates",
+             "items": 
+                 ["Charbroiled Chicken Breast Salad",
+                  "Grilled Pork Tenderloin Salad",
+                  "Julienne Salad",
+                  "Crabmeat Salad",
+                  "Taco Salad",
+                  "Greek Salad",
+                  "Chicken or Tuna Salad Plate",
+                  "Chicken Breast Plate",
+                  "Deep-Dish Quiche"
+                 ]      
+            
+            },
+            
+            {"category": "Appetizers",
+              "items":
+                 [ "Fried Clamari Rings",
+                   "Popcorn Shrimp",
+                   "Mozzarella Cheese Sticks",
+                   "Onion Rings",
+                   "Chicken Fingers",
+                   "Breaded Mushrooms",
+                   "Fried Zucchini"
+                 ]
+            },
+            
+            {"category": "Kids Menu",
+              "items":
+                 [ "Chicken Fingers and Fries",
+                   "Spaghetti and Meat Sauce",
+                   "Popcorn Scrimp Basket and Fries",
+                   "Hamburger and Fries",
+                   "Grilled Cheese",
+                   "Corn Dog and Fries"
+                 ]
+            }
+            
+            ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "JohnniesRTC",
+  "version": "1.0.0",
+  "description": "JohnniesRTC Website",
+  "main": "server.js",
+  "repository": "",
+  "author": "Demetrios Bairaktaris <DemetriBair@gmail.com>",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "~3.2.4"
+  }
+}

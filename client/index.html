@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="icon" href="">
+
+    <title>Home - JohnniesRTC</title>
+   
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     
+     
+         <link rel="stylesheet" href="/css/style.css">
+         <script type="text/javascript" src="/js/index.js"></script>
+    </head>
+    
+<body>
+      <div class="container">    
+         <nav class="navbar navbar-inverse primary_theme">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Johnnies Round The Clock</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li id="home" class="active"><a href="#">Home</a></li>
+              <li id="contact_us"><a class="nav_text" href="#">Contact Us</a></li>
+              <li id = "jobs"><a href="#">Jobs</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      
+    <main>
+      
+      <div class="container">
+        <div class="jumbotron featured" style='text-align:center;'>
+          <h1 class="fancy-font">Now Serving Lemon Rice Soup <strong>Daily</strong></h1>
+        </div>
+      </div>
+      <div class="container" id="contact_us_for_prices">
+         <div class="class-sm-12"><h5>Contact Us for Prices</h5></div>
+      </div>
+      <div class="container menu">
+          <div class="col-md-12 soups"><h1 class="fancy-font">Soups of The Day</h1>
+            <ul class="list-group">
+            </ul>
+          </div>
+      </div>
+      <div class="container menu" style="margin-top:5px;">
+          <div class="col-md-12 reg_menu"><h1 class="fancy-font">Menu</h1></div>
+      </div>
+    </main>
+    
+
+</body>
+
+<script type="text/javascript">
+  init();
+ 
+  $.post("/reg_menu",function(menu){
+    menu.menu.forEach(function(item,index){
+      $(".reg_menu").append(create_menu_section(item.category,item.items));
+    });
+  });
+  
+   $.post("/soups",function(soups){
+    soups.soups.forEach(function(item,index){
+      $(".soups").append("<li style='background:none;' class='list-group-item'>"+item+"</li>");
+    });
+  });
+</script>
+
+</html>
