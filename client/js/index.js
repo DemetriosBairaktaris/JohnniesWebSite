@@ -28,6 +28,14 @@ function init() {
       $(this).addClass("active");
     }
   });
+  
+  $("#admin_control").on("click",function(){
+      $main.fadeOut(function(){
+           $main.empty();
+           $main.append(gimme_admin_form());
+           $main.fadeIn();
+      });
+  });
 }
 
 function create_menu_section(section_name, items) {
@@ -106,4 +114,53 @@ function gimme_jobs_html() {
         </div>
     </div>
     `;
+}
+
+function gimme_admin_form(){
+     return ` <div class='container' style=background:rgba(0,0,0,0.5);'> 
+            <form class='col-md-12 text-center'>
+          <div class="form-group">
+            <label for="text">Soup 1</label>
+            <input type="text" class="form-control" id="soup1">
+          </div>
+           <div class="form-group">
+            <label for="text">Soup 2</label>
+            <input type="text" class="form-control" id="soup2">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd">
+          </div>
+          <div onclick='submit_soups()' class="btn btn-warning">Submit</div>
+         </form>
+         </div>
+    `;
+}
+
+function submit_soups(){
+   var $soup1= $("#soup1").val();
+   var $soup2 = $("#soup2").val();
+   var $pwd =  $("#pwd").val();
+   var $main = $("main");
+   $.post("/change_soups",{pass:$pwd,soup1:$soup1,soup2:$soup2},function(status){
+       $(".alert").remove();
+        if (status.msg === "success"){
+           var msg = ` <div class="alert alert-success">
+              <strong>Success!</strong>
+            </div>`
+            $main.prepend(msg);
+        } 
+        else{
+            var msg = ` <div class="alert alert-warning">
+              <strong>Failed to Submit Soups, maybe bad password!</strong>
+            </div>`
+            $main.prepend(msg);
+        }
+       
+   }).fail(function(){
+       alert("Couldn't connect to server for some reason.....")
+   }).done(function(){
+       
+   });
+
 }

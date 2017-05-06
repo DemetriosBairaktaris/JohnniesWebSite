@@ -3,13 +3,6 @@
   color: #ffc85b!important ;
 }
 
-.navbar-brand{
-
-
- color: #ffc85b!important ;
-}
-
-
 body{
   background: url("/../img/f.jpg");
   background-size: cover;
@@ -62,9 +55,6 @@ body{
   background: none ;
 }
 
-#contact_us_for_prices{
-  background-color: rgba(0,0,0,.5);
-  text-align: center ; 
-  color: white ;
-  font-family: 'Julius Sans One', sans-serif;
+label{
+  color: #ffc85b ; 
 }
