@@ -36,7 +36,98 @@
                        "Grilled Cheese",
                        "Corn Dog and Fries"
                      ]
-                }
+                },
                 
+                {"category": "Seafood",
+                  "items":
+                     [ "Baked Scrod Cod",
+                        "Sauteed Lake Perch",
+                        "Beer Battered Ocean Perch",
+                        "Fried Catfish",
+                        "Breaded Crab Cakes",
+                        "Salmon Steak",
+                        "Beer Battered Cod",
+                        "Crispy Fried Srimp",
+                        "Stuffed Flounder"
+                      ]
+                },
+                
+                {"category": "Chicken Entrees",
+                 "items":
+                    [ "Bourbon Glazed Chicken Breast",
+                      "Monterey Chicken",
+                      "Chicken Kiev",
+                      "Chicken Cordon Bleu",
+                      "Herb Butter Chicken",
+                      "Smothered Chicken",
+                      "Southern-Style Fried Chicken",
+                      "Chicken Strips"
+                    ]
+                },
+
+
+                {"category": "Steak and Shish Kabobs",
+                 "items":
+                    [ "Rib-eye Steak",
+                      "Pork/Chicken Shish Kabobs",
+                      "New York Strip Steak",
+                      "Top Butt Sirloin",
+                      "Chopped Sirloin",
+                      "Pepper Steak"
+                     ]
+                },
+                
+                {"category": "Italian Entrees",
+                 "items":
+                    ["Veal/Chicken Parmigiana",
+                     "Stuffed Jumbo Pasta Shells",
+                     "Supreme Meat and Cheese Lasagna",
+                     "Ravioli",
+                     "Spaghetti and Meat Sauce"
+                    ]
+                },
+                
+                {"category": "Greek Favorites",
+                 "items":
+                    ["Greek Pork Chops",
+                      "Spinach Cheese Pie",
+                      "Greek Spaghetti"
+                    ]
+                },
+                
+                {"category": "Country Dinners",
+                 "items": 
+                     ["Turkey Dinner",
+                      "Turkey Pie",
+                      "Breaded Veal Cutlet",
+                      "Homestyle Meatloaf",
+                      "Beef Liver Grill",
+                      "Breaded Pork Tenderloin"
+                     ]
+                },
+                
+                 {"category": "American Melts",
+                 "items": 
+                     [
+                         "Patty Melt",
+                         "Chicken Breast Melt",
+                         "Turkey Melt",
+                         "Tuna/Chicken Salad Melt",
+                         "Grilled Reuben",
+                         "Monte Cristo",
+                         "Grilled Ham/Bacon Cheese Sandwich",
+                         "Grilled Cheese"
+                     ]
+                },
+                
+                {"category": "Triple Decker Clubs",
+                 "items": 
+                     [
+                         "Classic Club",
+                         "BLT Club",
+                         "Turkey, Bacon, Swiss Club",
+                         "Turkey Swiss Club"
+                     ]
+                }
             ]
 }
