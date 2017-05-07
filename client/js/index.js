@@ -72,7 +72,7 @@ function gimme_menu_html() {
           <h1 class="fancy-font">Now Serving Lemon Rice Soup <strong>Daily</strong></h1>
         </div>
       </div>
-        <div class="container">
+        <div class="container contact_us">
          <div class="class-sm-12" id = 'contact_us_for_prices'><h5>Contact Us for Prices</h5></div>
       </div>
       <div class="container menu">
@@ -110,7 +110,7 @@ function gimme_jobs_html() {
             <ul class='list-group'>
                 <li class='list-group-item'>Server</li>
             </ul>
-            <h3>Send Resumé to JohnniesRoundTheClock@gmail.com</h3>
+            <h3>Send ResumÃ© to JohnniesRoundTheClock@gmail.com</h3>
         </div>
     </div>
     `;
