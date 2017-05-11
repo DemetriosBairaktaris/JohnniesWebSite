@@ -110,7 +110,7 @@ function gimme_jobs_html() {
             <ul class='list-group'>
                 <li class='list-group-item'>Server</li>
             </ul>
-            <h3>Send Resumé to JohnniesRoundTheClock@gmail.com</h3>
+            <h6>Send Resume to JohnniesRoundTheClock@gmail.com</h6>
         </div>
     </div>
     `;
